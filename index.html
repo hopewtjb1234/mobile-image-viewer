@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="color-scheme" content="dark">
-  <title>图片展示</title>
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ffffff">
+  <title>校友卡</title>
   <style>
     * { box-sizing: border-box; }
     html, body { margin: 0; width: 100%; min-height: 100%; }
-    body { background: #111; color: #fff; font-family: system-ui, sans-serif; }
+    body { background: #fff; color: #222; font-family: system-ui, sans-serif; }
     main {
       width: 100%;
       min-height: 100vh;
@@ -16,9 +17,10 @@
       padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px)
                env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
     }
+    @media (min-width: 768px) { main { align-items: center; } }
     img {
       display: block;
       width: auto;
